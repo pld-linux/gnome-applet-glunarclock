@@ -5,7 +5,7 @@ Version:	0.32.4
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://dl.sourceforge.net/sourceforge/glunarclock/glunarclock-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/glunarclock/glunarclock-%{version}.tar.gz
 # Source0-md5:	63e1d989581e6bf95cec82ff1bbc56ef
 Patch0:		%{name}-i18n.patch
 URL:		http://glunarclock.sourceforge.net/
@@ -15,15 +15,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 GNOME Lunar Clock Applet displays the current phase of the Moon as an
-applet for the gnome panel.
+applet for the GNOME panel.
 
 %description -l pl
 Applet Zegara Ksiê¿ycowego GNOME wy¶wietla bie¿±c± fazê Ksiê¿yca jako
 aplet na panelu GNOME.
-
-
-%define         _gnomehelpdir   %{_datadir}/gnome/help
-
 
 %prep
 %setup -q -n glunarclock-%{version}
@@ -49,14 +45,11 @@ rm -rf $RPM_BUILD_ROOT
 %scrollkeeper_update_post
 %gconf_schema_install glunarclock.schemas
 
-
 %preun
 %gconf_schema_uninstall glunarclock.schemas
 
-
 %postun
 %scrollkeeper_update_postun
-
 
 %files -f glunarclock.lang
 %defattr(644,root,root,755)
