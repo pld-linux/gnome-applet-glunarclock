@@ -1,5 +1,5 @@
 Summary:	Displays the current phase of the Moon
-Summary(pl):	Wy¶wietla bie¿±c± fazê Ksiê¿yca
+Summary(pl.UTF-8):   WyÅ›wietla bieÅ¼Ä…cÄ… fazÄ™ KsiÄ™Å¼yca
 Name:		gnome-applet-glunarclock
 Version:	0.32.4
 Release:	1
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 GNOME Lunar Clock Applet displays the current phase of the Moon as an
 applet for the GNOME panel.
 
-%description -l pl
-Applet Zegara Ksiê¿ycowego GNOME wy¶wietla bie¿±c± fazê Ksiê¿yca jako
+%description -l pl.UTF-8
+Applet Zegara KsiÄ™Å¼ycowego GNOME wyÅ›wietla bieÅ¼Ä…cÄ… fazÄ™ KsiÄ™Å¼yca jako
 aplet na panelu GNOME.
 
 %prep
