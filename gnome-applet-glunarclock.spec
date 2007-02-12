@@ -1,5 +1,5 @@
 Summary:	Displays the current phase of the Moon
-Summary(pl.UTF-8):   Wyświetla bieżącą fazę Księżyca
+Summary(pl.UTF-8):	Wyświetla bieżącą fazę Księżyca
 Name:		gnome-applet-glunarclock
 Version:	0.32.4
 Release:	1
